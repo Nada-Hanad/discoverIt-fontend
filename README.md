@@ -15,7 +15,7 @@ A tourism guide for Algeria: a landing page with a hero search, a carousel of to
 ## Features
 
 - Hero with search, and a Swiper carousel of destination cards with "read more" actions.
-- A list of places with a multi-select filter on the 58 wilayas, built with Material UI.
+- A list of places with a multi-select filter over the wilayas, built with Material UI.
 - Loading and error states while the places are fetched.
 - A testimonials carousel.
 
