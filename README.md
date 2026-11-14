@@ -1,43 +1,31 @@
-# DiscoverIt - Explore the Best of Algeria
+# DiscoverIt
 
-DiscoverIt is a comprehensive project that offers tourists an opportunity to explore the best of Algeria in a single place - this website. It serves as a tourist guide, providing valuable information about the diverse landscapes, cultural heritage, and tourist attractions found in Algeria.
+A tourism guide for Algeria: a landing page with a hero search, a carousel of top destinations, a list of places you can filter by wilaya (province), and testimonials. It is the React frontend of a two-part project with an Express and MongoDB API that stores places, their events and media.
+
+![DiscoverIt home page with hero search and destination carousel](docs/screenshots/home.png)
+
+| Top destinations | Places filtered by wilaya |
+|---|---|
+| ![Destination carousel](docs/screenshots/destinations.png) | ![Place list with wilaya filter](docs/screenshots/by-region.png) |
+
+<img src="docs/screenshots/mobile.png" alt="DiscoverIt on a phone" width="300">
+
+*The API is not running any more, so for these screenshots (November 2026) the page was served six sample places through a mocked `/locations` response; photos of Maqam Echahid and Ghardaïa are from Wikimedia Commons.*
 
 ## Features
 
-- Detailed information about Algeria's monuments and heritage
-- Discover UNESCO World Heritage Sites
-- Explore scenic beaches and desert landscapes
-- User-friendly interface and intuitive navigation
-- Comprehensive travel tips and recommendations
+- Hero with search, and a Swiper carousel of destination cards with "read more" actions.
+- A list of places with a multi-select filter on the 58 wilayas, built with Material UI.
+- Loading and error states while the places are fetched.
+- A testimonials carousel.
 
-## Discover Algeria
+## Stack
 
-Algeria is a country rich in history, culture, and natural beauty. The project aims to take visitors on a virtual journey through the landscapes of Algeria, starting with the incredible Saharan and Negroid heritage found in the country's monuments. From there, users can explore UNESCO World Heritage Sites, scenic beaches, and captivating desert landscapes. Whether you're interested in history, nature, or adventure, Algeria offers a wide range of experiences for every traveler.
+React (Create React App), Material UI, Swiper, Axios. The API side (Node, Express, TypeScript and MongoDB, with Cloudinary for media) lived in a separate repository.
 
-## Installation
+## Running it
 
-1. Clone the repository:
-
-   ```shell
-   git clone https://github.com/Nada-Hanad/discoverIt-fontend.git
-   ```
-
-2. Navigate to the project directory:
-
-   ```shell
-   cd discoverIt-fontend
-   ```
-
-3. Install the dependencies:
-
-   ```shell
-    npm install
-   ```
-
-4. Start the development server:
-
-   ```shell
-    npm start
-   ```
-
-5. Open the app in your browser at http://localhost:3000.
+```bash
+npm install
+npm start      # expects the API at http://localhost:3000/locations
+```
